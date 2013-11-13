@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quizz qui envoie du pâté !</title>
+    <link rel="Stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="jq-all-debug.js"></script>
+    <script type="text/javascript" src="jQuiz.js"></script>
+</head>
+<body>
+    <h1>Connaissez-vous vraiment M&M's ?</h1>
+    <div class="questionContainer radius">
+        <div class="question"><b>Question 1:</b> Qui a inventé les M&M's?</div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-a" />Forrest Mars</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-b" />Eminem's</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-c" />Bruno Mars</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer">
+                <div class="prev"></div>
+                <div class="next">
+                    <a class="btnNext">Suivant &gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer hide radius">
+        <div class="question"><b>Question 2:</b> Que signifie M&M's ?</div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-a" />Mars & Murrie's</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-b" />Mick & Mouse</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-c" />Marsh & Mallow</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer">
+                <div class="next">
+                    <a class="btnNext">Suivant &gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 3:</b> Quel était le premier nom des M&M's en France ?</div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-a" />M&M's</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-b" />Bonitos</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-c" />Treets</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer">
+                <div class="next">
+                    <a class="btnNext">Suivant &gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 4:</b> Lequel de ces produits M&M's n'existe pas ?</div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-a" />M&M's Bretzel</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-b" />M&M's Crispy</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-c" />M&M's Cacao</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer">
+                <div class="next">
+                    <a class="btnNext">Suivant &gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 5:</b> Où ont été inventés les M&M's ?</div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-a" />En Espagne</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-b" />Aux Etats-Unis</label>
+                </li>
+				<li>
+                    <label><input type="radio" name="q5" id="q5-c" />En Suisse</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer">
+            <div class="next">
+                <a class="btnShowResult">Terminer!</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="txtStatusBar">Avancement</div>
+    <div id="progressKeeper" class="radius">
+        <div id="progress"></div>
+    </div>
+    <div id="resultKeeper" class="radius hide"></div>
+</body>
+</html>
