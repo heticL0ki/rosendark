@@ -1,0 +1,204 @@
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+
+
+.content {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 10%;
+  margin-top: -2%;
+  padding: 10px 20px;
+}
+.sidebarLeft {
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+  text-align: left;
+  font-family: "Doppio One", sans-serif;
+  color: #ccc;
+}
+.sidebarRight {
+  float: right;
+  margin-right: 4%;
+  width: 220px;
+  text-align: left;
+  font-family: "Doppio One", sans-serif;
+  color: #ccc;
+}
+h1, h2 {
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 18px;
+}
+.panel {
+  padding: 12px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.dif-options {
+  clear: both;
+  overflow: hidden;
+  margin: 20px -7px 0;
+}
+.dif-options div {
+  float: left;
+  width: 20%;
+}
+.dif-options input {
+  display: none;
+}
+.dif-options label {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #666;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  color: #999;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+.dif-options input:checked + label {
+  color: #fff;
+  background-color: #593f6b;
+  border-color: #fff;
+  cursor: default;
+}
+.freeze .dif-options input:not(:checked) + label {
+  font-size: 0;
+  margin: 7px auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+  color: transparent;
+  line-height: 10px;
+  cursor: default;
+  transition: .2s;
+}
+.start {
+  margin-top: 20px;
+}
+.freeze .start {
+  display: none;
+}
+.start button {
+  display: block;
+  width: 100%;
+  padding: 2px 12px 4px;
+  font-family: "Doppio One", sans-serif;
+  font-size: 24px;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  background-color: #593f6b;
+  color: #fff;
+  cursor: pointer;
+}
+.start button:focus {
+  outline: none;
+}
+.restart {
+  margin-top: 20px;
+}
+
+.restart button {
+  display: block;
+  width: 100%;
+  padding: 2px 12px 4px;
+  font-family: "Doppio One", sans-serif;
+  font-size: 24px;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  background-color: #593f6b;
+  color: #fff;
+  cursor: pointer;
+}
+.restart button:focus {
+  outline: none;
+}
+.go .restart{
+	display: block;
+}
+
+.info div {
+  margin-top: 10px;
+}
+.board {
+  position: relative;
+  float: left;
+  width: 428px;
+  height: 428px;
+  margin-left: 3%;
+  margin-top: 68px;
+  background-image: url("../images/board.png");
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.lit-columns, .lit-cells, .chips, .click-columns {
+  position: absolute;
+  width: 428px;
+  height: 428px; 
+  z-index:200;
+}
+.lit-columns div {
+  float: left;
+  width: 60px;
+  height: 426px;
+  margin: 1px 0 1px 1px;
+  transition: background-color 0.1s;
+}
+.lit-columns .lit {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.1s;
+}
+.lit-cells div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.chips div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  backface-visibility: hidden;
+}
+.chips .p1 {
+  background-image: url("../images/pink.png");
+}
+.chips .p2 {
+  background-image: url("../images/black.png");
+}
+.chips .cursor {
+  bottom: 428px;
+  transition: left 0.1s ease-out;
+}
+.chips .dropped {
+  transition: bottom ease-in;
+  animation: bounce 0.3s;
+}
+.click-columns div {
+  float: left;
+  width: 61px;
+  height: 428px;
+}
+.click-columns div:first-child {
+  padding-left: 1px;
+}
+.click-columns .hover {
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% { animation-timing-function: ease-out; transform: translateY(0); }
+  30% { animation-timing-function: ease-in; transform: translateY(-40px); }
+  60% { animation-timing-function: ease-out; transform: translateY(0); }
+  80% { animation-timing-function: ease-in; transform: translateY(-10px); }
+  100% { animation-timing-function: ease-out; transform: translateY(0); }
+}

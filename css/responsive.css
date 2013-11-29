@@ -1,0 +1,147 @@
+/*Screen Tablettes*/
+@media screen and (min-width: 768px) and (max-width: 960px){
+
+#main-content{
+	height : 600px;
+	width : 80%;
+}
+
+#logo{
+	margin-left : 37%;
+}
+
+#main-content-principale{
+	height : 550px;
+}
+
+#mainwrapper .box{
+	height: 170px;
+}
+
+#playfield{
+    width: 80%;
+    height: 380px;
+    margin-top : 50px;
+    margin-left : 12%;
+     }
+
+#nom-jeu, #nom-jeu p{
+	margin-left : 15%;
+	margin-top : 6px;
+}
+
+.fleched{
+	margin-top : 25%;
+	margin-right : 2%;
+}
+
+.flecheg{
+	margin-top : 25%;
+	margin-left : 2%;
+}
+
+#share, #share p{
+	margin : 3px 70px 0px 0px;
+}}
+
+
+@media screen and (min-width: 961px) and (max-width: 1135px){
+		#playfield{
+	    width:90%;
+	    margin-left : 50px;
+		}
+}
+
+@media screen and (min-width: 1136px) and (max-width: 1200px){
+		#playfield{
+	    width:80%;
+	    margin-left : 100px;
+		}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+		#playfield{
+	    width:70%;
+	    margin-left : 200px;
+		}
+
+		#logo{
+			margin-left : 42%;
+		}
+}
+
+
+@media screen and (min-width: 1441px) and (max-width: 1680px){
+		#playfield{
+	    width:60%;
+	    margin-left : 270px;
+		}
+
+		#logo{
+			margin-left : 42%;
+		}
+}
+/*Screen Smartphones*/
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+#logo{
+  margin-left : 30%;
+  margin-top : 80px;
+}
+
+#main-content-principale{
+	height : 350px;
+}
+
+#mainwrapper .box{
+	height: 140px;
+}
+
+#Playfield{
+	width: 80%;
+    height: 450px;
+    margin-top : 50px;
+    margin-left: -15px;
+}
+
+#main-content{
+	height : 1130px;
+	width : 80%;
+}
+
+#main-content-footer{
+	height : 30px;
+	margin-top: 205px;
+}
+
+#share, #share p{
+	padding-left : 40px;
+	font-size:1.1em; 
+	float: right;
+	margin : -2px 55px 0px 0px;
+}
+
+#turns{
+  position: fixed;
+  float : left;
+  margin : 10px 0px 0px 50px;
+  font-size:1em;
+  margin-top : 5px;
+  }
+
+.fleched{
+	margin-top : 50%;
+	margin-right : 2%;
+}
+
+#nom-jeu, #nom-jeu p{
+	font-size:1.1em; 
+	margin-top : 5px;
+	margin-left : 35px;
+}
+
+.flecheg{
+	margin-top : 50%;
+	margin-left : 2%;
+}}

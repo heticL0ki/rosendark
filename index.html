@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title></title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/video.css"> 
+        <link rel="stylesheet" href="css/design.css">
+        <script language=javascript>/*Skip of the video if mobile device*/
+            var redirectagent = navigator.userAgent.toLowerCase();
+            var redirect_devices = ['vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'blackberry', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'iphone', 'android', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+            for (var i in redirect_devices) {
+                if (redirectagent.indexOf(redirect_devices[i]) !== -1) {
+                    location.replace("http://defi-mms.dumoulinjb.fr/jeux.html");
+                }
+            }
+        </script>
+</head>
+<body>
+  
+    <div id="button" class="off">
+        <span></span>
+        <span></span>
+    </div>
+      
+    <video id="video">
+        <source src="video/TeaserMMS.mp4" type='video/mp4'>
+        <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+    <div class="skip-wrapper">
+        <a href="http://defi-mms.dumoulinjb.fr/jeux.html" class="skip-btn">
+            <span class="skip-btn-text">Passer la vidéo</span> 
+        </a>
+    </div>
+    <div id="progressBar">
+        <span class="progress"></span>
+        <span class="buffer"></span>
+    </div>
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+</body>
+</html>

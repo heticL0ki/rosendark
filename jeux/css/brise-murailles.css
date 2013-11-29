@@ -1,0 +1,157 @@
+#gamecontainer {
+	width:640px;
+	height:480px;
+	background: url(../images/splashscreen.png);
+	border: 1px solid black;
+}
+#gamecanvas {
+	position: relative;
+	display: none;
+        margin-left: 20%;
+        margin-top: 15px;
+}
+.gamelayer {
+	position: relative;
+	display: none;
+}
+/* Game Starting Menu Screen */
+#gamestartscreen {
+	padding-top:220px;
+	text-align:center;
+        margin-right: 50px;
+        opacity:0.8;
+}
+#gamestartscreen:hover {
+	padding-top:220px;
+	text-align:center;
+        margin-right: 50px;
+        opacity:1;
+}
+#gamestartscreen:active {
+	padding-top:222px;
+	text-align:center;
+        margin-right: 50px;
+}
+#gamestartscreen img {
+	margin:10px;
+	cursor:pointer;
+}
+
+aside {
+
+}
+
+#main-content{
+
+}
+
+/* Level Selection Screen */
+#levelselectscreen {
+	padding-top:17%;
+	padding-left:32%;
+}
+#levelselectscreen input {
+	margin:20px;
+	cursor:pointer;
+	background-color:#000;
+	color:white;
+	font-size: 20px;
+	width:64px;
+	height:64px;
+	border:0;
+}
+#levelselectscreen input:hover{
+
+        border:5px solid #fff;
+}
+
+/* Loading Screen */
+#loadingscreen {
+	background:rgba(100,100,100,0.3);
+}
+#loadingmessage {
+	margin-top:400px;
+	text-align:center;
+	height:48px;
+	color:white;
+	background:url(../images/loader.gif) no-repeat center;
+	font:12px Arial;
+}
+
+/* Score Screen */
+#scorescreen {
+	height: 100px;
+font: 32px Helvetica Neue;
+text-shadow: 0px 0px 2px rgb(0, 0, 0);
+color: white;
+float: right;
+position: relative;
+width: 40px;
+margin-right: 20%;
+top: 100px;
+}
+#scorescreen img{
+	opacity:0.6;
+	top:10px;
+	position:relative;
+	padding-left:10px;
+	cursor:pointer;
+        
+}
+
+#scorescreen #score {
+	position:absolute;
+	top:5px;
+	right:20px;
+}
+
+/* Ending Screen */
+#endingscreen {
+text-align:center;
+}
+ 
+#endingscreen div {
+height:460px;
+padding-top:80px;
+border:1px;
+background:rgba(1,1,1,0.5);
+border-radius: 30px;
+}
+
+#endingscreen p {
+font: 20px 'itc_lubalin_graph_stddemi';
+text-shadow: 0 0 2px #000;
+color:white;
+margin-bottom: 40px;
+}
+ 
+#endingscreen p img{
+top:10px;
+position:relative;
+cursor:pointer;
+}
+
+#endingmessage {
+    margin-left: 20%;
+    font-size: 40px;
+}
+
+#playcurrentlevel {
+    margin-right: 10px;
+}
+
+#playnextlevel {
+    margin-right: 22px;
+}
+
+#returntolevelscreen {
+    margin-left:13px;
+}
+
+.level {
+    float: left;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 20px;
+    font-size: 30px;
+}
