@@ -38,126 +38,121 @@
 /**
  * Facebook sharing for the website
  */
-$(document).ready(function () {
-    $('#facebook').click(function (e) {
-        //Recovery of the score in the local storage
-        var score = localStorage.getItem('score');
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: ''
-            });
-    });
+$('#facebook').click(function (e) {
+    e.preventDefault();
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s',
+            link: 'http://defi-mms.dumoulinjb.fr/',
+            caption: 'hey how is my Application ? tell me dude',
+            description: 'hey how is my Application ?',
+            message: ''
+        });
 });
 /**
  * Facebook sharing for memo
  */
-$(document).ready(function () {
-    $('.memo').click(function (e) {
-        //Recovery of the score in the local storage
-        var score = localStorage.getItem('score');
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.memo').click(function (e) {
+    e.preventDefault();
+    //Recovery of the score in the local storage
+    var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Memo',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/memo.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 /**
  * Facebook sharing for quizz1
  */
-$(document).ready(function () {
-    $('.quizz1').click(function (e) {
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.quizz1').click(function (e) {
+    e.preventDefault();
+	var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Quizz1',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/quizz1.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 /**
  * Facebook sharing for quizz2
  */
-$(document).ready(function () {
-    $('.quizz2').click(function (e) {
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.quizz2').click(function (e) {
+    e.preventDefault();
+	var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Quizz2',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/quizz2.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 /**
  * Facebook sharing for power4
  */
-$(document).ready(function () {
-    $('.power4').click(function (e) {
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.power4').click(function (e) {
+    e.preventDefault();
+	
+    //Recovery of the score in the local storage
+    var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Puissance4',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/power4.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 
 /**
 * Facebook sharing for angry M&M's
 */
-$(document).ready(function () {
-    $('.angrymms').click(function (e) {
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.angrymms').click(function (e) {
+    e.preventDefault();
+	
+    //Recovery of the score in the local storage
+    var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Angry M&M\'s',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/brise-murailles.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 /**
 * Facebook sharing for tictactoe
 */
-$(document).ready(function () {
-    $('.tictactoe').click(function (e) {
-        e.preventDefault();
-        FB.ui(
-            {
-                method: 'feed',
-                name: 'Defi M&M\'s',
-                link: 'http://defi-mms.dumoulinjb.fr/',
-                caption: 'hey how is my Application ? tell me dude',
-                description: 'hey how is my Application ?',
-                message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
-            });
-    });
+$('.tictactoe').click(function (e) {
+    e.preventDefault();
+	
+    //Recovery of the score in the local storage
+    var score = localStorage.getItem('score');
+    FB.ui(
+        {
+            method: 'feed',
+            name: 'Defi M&M\'s - Morpion',
+            link: 'http://defi-mms.dumoulinjb.fr/jeux/morpion.html',
+            caption: 'J\ai fait '+score+' à ce jeu, peux-tu me battre ?',
+            description: 'hey how is my Application ?',
+            message: 'J\ai eu '+score+' à ce jeu, peux-tu me battre ?'
+        });
 });
 
 

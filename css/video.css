@@ -1,5 +1,10 @@
 body{background:#202118;cursor:pointer;}
 
+video {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
 .skip-wrapper {
     position: absolute;
     margin-left: 45%;

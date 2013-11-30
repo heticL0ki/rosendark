@@ -38,8 +38,8 @@ var levels = {
 				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
 
 				{type:"villain", name:"small",x:715,y:155,calories:100},
-				{type:"villain", name:"medium",x:670,y:405,calories:350},
-				{type:"villain", name:"medium",x:765,y:400,calories:350},
+				{type:"villain", name:"small",x:670,y:405,calories:350},
+				{type:"villain", name:"small",x:765,y:400,calories:350},
 
 				{type:"hero", name:"rouge",x:30,y:415},
 				{type:"hero", name:"jaune",x:80,y:405},
@@ -64,7 +64,7 @@ var levels = {
 				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
 
 				{type:"villain", name:"medium",x:715,y:155,calories:350},
-				{type:"villain", name:"medium",x:670,y:405,calories:350},
+				{type:"villain", name:"medium",x:670,y:400,calories:350},
 				{type:"villain", name:"medium",x:765,y:400,calories:350},
 
 				{type:"hero", name:"rouge",x:30,y:415},
@@ -84,11 +84,21 @@ var levels = {
 				{type:"ground", name:"wood",x:185,y:390,width:30,height:80,isStatic:true},
 
 				//Blocs
-				{type:"block", name:"glass",x:670,y:317.5, angle:100, width:100, height:25},
-				{type:"block", name:"glass",x:770,y:317.5,angle:100, width:100, height:25},
-				{type:"block", name:"glass",x:670,y:255,angle:90, width:100, height:25},
-				{type:"block", name:"glass",x:660,y:255,angle:90, width:100, height:25},
-				{type:"block", name:"glass",x:770,y:255,angle:90, width:100, height:25},
+				{type:"block", name:"glass",x:670,y:317.5, width:100, height:25},
+				{type:"block", name:"glass",x:770,y:317.5, width:100, height:25},
+				{type:"block", name:"glass",x:870,y:317.5, width:100, height:25},
+				{type:"block", name:"glass", x:820,y:380,angle:90,width:100,height:25},
+
+				{type:"block", name:"glass", x:795,y:380,angle:90,width:100,height:25},
+
+				{type:"block", name:"glass", x:720,y:380,angle:90,width:100,height:25},
+
+				{type:"block", name:"glass", x:695,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:920,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:720,y:192.5,width:100,height:25},
 				/*{type:"block", name:"wood",x:,y:,width:, height:},
 				{type:"block", name:"wood",x:,y:,width:, height:},
 				{type:"block", name:"wood",x:,y:,width:, height:},
@@ -96,11 +106,18 @@ var levels = {
 				{type:"block", name:"wood",x:,y:,width:, height:},*/
  
 				//Villains
-				{type:"villain", name:"small",x:0,y:0,calories:100},
-				{type:"villain", name:"medium",x:0,y:0,calories:350},
-				{type:"villain", name:"medium",x:0,y:0,calories:350},
-				{type:"villain", name:"medium",x:0,y:0,calories:350},
-				{type:"villain", name:"boss",x:0,y:0,calories:350},
+				{type:"villain", name:"small",x:715,y:155,calories:100},
+				{type:"villain", name:"medium",x:667,y:400,calories:350},
+				{type:"villain", name:"medium",x:762,y:400,calories:350},
+				{type:"villain", name:"medium",x:715,y:275,calories:350},
+				{type:"villain", name:"boss",x:862,y:275,calories:350},
+				{type:"villain", name:"small",x:865,y:400,calories:350},
+
+				//Heros	
+				{type:"hero", name:"rouge",x:30,y:415},
+				{type:"hero", name:"jaune",x:30,y:415},
+				{type:"hero", name:"rouge",x:80,y:405},
+				{type:"hero", name:"jaune",x:140,y:405},
 			]
 		},
 	],

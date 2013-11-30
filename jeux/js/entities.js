@@ -5,18 +5,18 @@ var entities = {
 			fullHealth:100,
 			density:2.4,
 			friction:0.4,
-			restitution:0.15,
+			restitution:0.15
 		},
 		"wood":{
 			fullHealth:500,
 			density:0.7,
 			friction:0.4,
-			restitution:0.4,
+			restitution:0.4
 		},
 		"dirt":{
 			density:3.0,
 			friction:1.5,
-			restitution:0.2,	
+			restitution:0.2	
 		},
 		// VILLAINS
 		"small":{
@@ -25,7 +25,7 @@ var entities = {
 			radius:25,
 			density:1,
 			friction:0.5,
-			restitution:0.4,	
+			restitution:0.4	
 		},
 		"medium":{
 			shape:"rectangle",
@@ -34,16 +34,16 @@ var entities = {
 			height:60,
 			density:1,
 			friction:0.5,
-			restitution:0.7,	
+			restitution:0.7	
 		},
 		"boss":{
 			shape:"rectangle",
 			fullHealth:500,
-			width:50,
+			width:67,
 			height:70,
 			density:1,
 			friction:0.5,
-			restitution:0.6,	
+			restitution:0.6	
 		},
 		// HEROS
 		"rouge":{
@@ -90,10 +90,10 @@ var entities = {
 				entity.sprite = loader.loadImage("images/entities/"+entity.name+".png");
 				entity.shape = definition.shape;  
 				entity.bounceSound = game.bounceSound;
-				if(definition.shape == "circle"){
+				if(definition.shape === "circle"){
 					entity.radius = definition.radius;
 					box2d.createCircle(entity,definition);					
-				} else if(definition.shape == "rectangle"){
+				} else if(definition.shape === "rectangle"){
 					entity.width = definition.width;
 					entity.height = definition.height;
 					box2d.createRectangle(entity,definition);					
@@ -116,10 +116,10 @@ var entities = {
 			break;
 			case "villain":
 			case "hero": 
-				if (entity.shape=="circle"){
+				if (entity.shape==="circle"){
 					game.context.drawImage(entity.sprite,0,0,entity.sprite.width,entity.sprite.height,
 							-entity.radius-1,-entity.radius-1,entity.radius*2+2,entity.radius*2+2);	
-				} else if (entity.shape=="rectangle"){
+				} else if (entity.shape==="rectangle"){
 					game.context.drawImage(entity.sprite,0,0,entity.sprite.width,entity.sprite.height,
 							-entity.width/2-1,-entity.height/2-1,entity.width+2,entity.height+2);
 				}
@@ -133,4 +133,4 @@ var entities = {
 		game.context.translate(-position.x*box2d.scale+game.offsetLeft,-position.y*box2d.scale);
 	}
 
-}
+};
